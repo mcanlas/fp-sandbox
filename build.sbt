@@ -4,7 +4,7 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(scalaVersion := "2.12.6")
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.0.1")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.1.0")
 
 lazy val catsEffect = project
   .settings(scalaVersion := "2.12.6")
