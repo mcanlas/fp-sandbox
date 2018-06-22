@@ -8,7 +8,7 @@ lazy val cats = project
 
 lazy val catsEffect = project
   .settings(scalaVersion := "2.12.6")
-  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.0.0-RC")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.0.0-RC2")
 
 lazy val mouse = project
   .settings(scalaVersion := "2.12.6")
