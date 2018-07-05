@@ -17,3 +17,7 @@ lazy val mouse = project
 lazy val scalaz = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.25")
+
+lazy val scalazEffect = project
+  .settings(scalaVersion := "2.12.6")
+  .settings(libraryDependencies += "org.scalaz" %% "scalaz-ioeffect" % "2.10.1")
