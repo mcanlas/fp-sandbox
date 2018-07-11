@@ -1,6 +1,6 @@
 lazy val root = Project("fp-sandbox", file("."))
   .settings(scalaVersion := "2.12.6")
-  .aggregate(cats, mouse, catsEffect, scalaz)
+  .aggregate(cats, mouse, catsEffect, scalaz, scalazEffect)
 
 lazy val cats = project
   .settings(scalaVersion := "2.12.6")
