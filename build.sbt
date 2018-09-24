@@ -14,7 +14,7 @@ lazy val catsEffect = project
 
 lazy val fs2 = project
   .settings(scalaVersion := "2.12.6")
-  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "0.10.4")
+  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "0.10.6")
   .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val mouse = project
