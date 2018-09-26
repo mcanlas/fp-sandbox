@@ -5,22 +5,26 @@ lazy val root = Project("fp-sandbox", file("."))
 lazy val cats = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0")
-  .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
+  .settings(
+    initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.0.0")
-  .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
+  .settings(
+    initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val fs2 = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "0.10.6")
-  .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
+  .settings(
+    initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val mouse = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.18")
-  .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
+  .settings(
+    initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
 
 lazy val scalaz = project
   .settings(scalaVersion := "2.12.6")
