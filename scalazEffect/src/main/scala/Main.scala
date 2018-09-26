@@ -16,6 +16,7 @@ object Main extends SafeApp {
       .traverse[Task, Unit](toBomb)
       .attempt
       .map(_.fold(_ => 1, _ => 0))
-      .map { n => if (n == 0) println("safe") else println("err"); ExitStatus.ExitNow(n) }
+      .map { n =>
+        if (n == 0) println("safe") else println("err"); ExitStatus.ExitNow(n)
+      }
 }
-

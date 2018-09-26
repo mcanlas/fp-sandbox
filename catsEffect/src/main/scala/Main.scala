@@ -15,4 +15,3 @@ object Main extends App {
     .traverse(toBomb)
     .unsafeRunSync
 }
-
