@@ -31,3 +31,5 @@ lazy val scalazEffect = project
   .settings(scalaVersion := "2.12.6")
   .settings(libraryDependencies += "org.scalaz" %% "scalaz-ioeffect" % "2.10.1")
   .settings(initialCommands in console := "import scalaz._, Scalaz._")
+
+scalafmtOnCompile := true
