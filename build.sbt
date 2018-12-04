@@ -4,13 +4,13 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(scalaVersion := "2.12.7")
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.5.0")
   .settings(
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
   .settings(scalaVersion := "2.12.7")
-  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.0.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.1.0")
   .settings(
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
