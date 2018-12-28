@@ -22,7 +22,7 @@ lazy val fs2 = project
 
 lazy val mouse = project
   .settings(scalaVersion := "2.12.8")
-  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.19")
+  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.20")
   .settings(
     initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
 
