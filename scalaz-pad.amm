@@ -1,0 +1,4 @@
+#!/usr/bin/env amm
+
+// file name cannot be just `scalaz.amm`, will cause import conflict
+import $ivy.`org.scalaz::scalaz-core:7.2.27`, scalaz._, Scalaz._
