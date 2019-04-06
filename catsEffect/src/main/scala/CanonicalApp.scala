@@ -7,15 +7,3 @@ object CanonicalApp extends IOApp {
       println("Hello, world!")
     }.as(ExitCode.Success)
 }
-
-
-object UncontrolledMain {
-  def main(args: Array[String]): Unit = {
-    val io =
-      IO {
-        println("Hello, world!")
-      }.as(ExitCode.Success)
-
-    io.unsafeRunSync()
-  }
-}
