@@ -11,7 +11,7 @@ lazy val cats = project
 
 lazy val catsEffect = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.2.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "1.3.0")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._, cats.effect._")
