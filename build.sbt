@@ -25,7 +25,7 @@ lazy val fs2 = project
 
 lazy val mouse = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.21")
+  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.22")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
