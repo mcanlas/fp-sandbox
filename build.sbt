@@ -18,7 +18,7 @@ lazy val catsEffect = project
 
 lazy val fs2 = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "1.0.4")
+  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "1.0.5")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
