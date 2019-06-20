@@ -4,7 +4,7 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.6.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.6.1")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
