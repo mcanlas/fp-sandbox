@@ -42,7 +42,7 @@ lazy val scalazEffect = project
 
 lazy val zio = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.scalaz" %% "scalaz-zio" % "1.0-RC4")
+  .settings(libraryDependencies += "org.scalaz" %% "scalaz-zio" % "1.0-RC5")
 
 scalafmtOnCompile := true
 
