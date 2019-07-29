@@ -1,6 +1,6 @@
 lazy val root = Project("fp-sandbox", file("."))
   .settings(commonSettings: _*)
-  .aggregate(cats, mouse, catsEffect, fs2, scalaz, scalazEffect, zio)
+  .aggregate(cats, mouse, catsEffect, fs2, scalaz, zio)
 
 lazy val cats = project
   .settings(commonSettings: _*)
@@ -33,11 +33,6 @@ lazy val mouse = project
 lazy val scalaz = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.28")
-  .settings(initialCommands in console := "import scalaz._, Scalaz._")
-
-lazy val scalazEffect = project
-  .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.scalaz" %% "scalaz-ioeffect" % "2.10.1")
   .settings(initialCommands in console := "import scalaz._, Scalaz._")
 
 lazy val zio = project
