@@ -4,7 +4,7 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "1.6.1")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0-M4")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
@@ -18,7 +18,7 @@ lazy val catsEffect = project
 
 lazy val fs2 = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "1.0.5")
+  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "1.1.0-M1")
   .settings(
     scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
