@@ -37,7 +37,7 @@ lazy val scalaz = project
 
 lazy val zio = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.scalaz" %% "scalaz-zio" % "1.0-RC5")
+  .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.0-RC10-1")
 
 scalafmtOnCompile := true
 

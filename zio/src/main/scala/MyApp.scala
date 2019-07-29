@@ -1,5 +1,5 @@
-import scalaz.zio.App
-import scalaz.zio.console._
+import zio.App
+import zio.console._
 
 object MyApp extends App {
   def run(args: List[String]) =
@@ -15,7 +15,7 @@ object MyApp extends App {
 
 object UncontrolledMain {
   def main(args: Array[String]): Unit = {
-    val runtime = new scalaz.zio.DefaultRuntime {}
+    val runtime = new zio.DefaultRuntime {}
     val io = putStrLn("Hello World!")
 
     runtime.unsafeRun(io)
