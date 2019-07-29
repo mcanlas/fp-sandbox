@@ -6,28 +6,24 @@ lazy val cats = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0-M4")
   .settings(
-    scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "2.0.0-M4")
   .settings(
-    scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._, cats.effect._")
 
 lazy val fs2 = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "1.1.0-M1")
   .settings(
-    scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val mouse = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.22")
   .settings(
-    scalacOptions += "-Ypartial-unification",
     initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
 
 lazy val scalaz = project
@@ -42,4 +38,4 @@ lazy val zio = project
 scalafmtOnCompile := true
 
 lazy val commonSettings = Seq(
-  scalaVersion := "2.12.8")
+  scalaVersion := "2.13.0")
