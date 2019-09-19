@@ -38,4 +38,4 @@ lazy val zio = project
 scalafmtOnCompile := true
 
 lazy val commonSettings = Seq(
-  scalaVersion := "2.13.0")
+  scalaVersion := "2.13.1")
