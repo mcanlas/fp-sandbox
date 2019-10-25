@@ -1,6 +1,6 @@
 lazy val root = Project("fp-sandbox", file("."))
   .settings(commonSettings: _*)
-  .aggregate(cats, mouse, catsEffect, fs2, scalaz, zio)
+  .aggregate(cats, mouse, catsEffect, fs2, scalaz, zio, refined)
 
 lazy val cats = project
   .settings(commonSettings: _*)
@@ -34,6 +34,10 @@ lazy val scalaz = project
 lazy val zio = project
   .settings(commonSettings: _*)
   .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.0-RC12-1")
+
+lazy val refined = project
+  .settings(commonSettings: _*)
+  .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.10")
 
 scalafmtOnCompile := true
 
