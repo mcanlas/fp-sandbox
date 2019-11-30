@@ -24,7 +24,7 @@ lazy val mouse = project
 
 lazy val scalaz = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.28")
+  .settings(libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.2.29")
   .settings(initialCommands in console := "import scalaz._, Scalaz._")
 
 lazy val zio = project
