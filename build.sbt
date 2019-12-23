@@ -4,7 +4,7 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(commonSettings: _*)
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.1.0")
   .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
