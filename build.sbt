@@ -1,5 +1,5 @@
 lazy val root = Project("fp-sandbox", file("."))
-  .aggregate(cats, mouse, catsEffect, fs2, scalaz, zio, refined)
+  .aggregate(cats, mouse, catsEffect, fs2, scalaz, zio, refined, circe)
 
 lazy val cats = project
   .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.1.0")
@@ -27,6 +27,9 @@ lazy val zio = project
 
 lazy val refined = project
   .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.10")
+
+lazy val circe = project
+  .settings(libraryDependencies +=  "io.circe" %% "circe-core" % "0.13.0")
 
 scalafmtOnCompile := true
 
