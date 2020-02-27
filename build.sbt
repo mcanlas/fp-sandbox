@@ -26,7 +26,7 @@ lazy val zio = project
   .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.0-RC12-1")
 
 lazy val refined = project
-  .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.10")
+  .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.12")
 
 lazy val circe = project
   .settings(libraryDependencies +=  "io.circe" %% "circe-core" % "0.13.0")
