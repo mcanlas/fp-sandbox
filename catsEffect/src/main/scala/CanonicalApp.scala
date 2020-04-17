@@ -1,5 +1,4 @@
-import cats.implicits._
-import cats.effect.{ IO, IOApp, ExitCode }
+import cats.effect._
 
 object CanonicalApp extends IOApp {
   def run(args: List[String]): IO[ExitCode] =
