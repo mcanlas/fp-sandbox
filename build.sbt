@@ -14,7 +14,7 @@ lazy val fs2 = project
   .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val mouse = project
-  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.24")
+  .settings(libraryDependencies += "org.typelevel" %% "mouse" % "0.25")
   .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._, mouse.all._")
 
 lazy val scalaz = project
