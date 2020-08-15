@@ -16,7 +16,7 @@ object MyApp extends App {
 object UncontrolledMain {
   def main(args: Array[String]): Unit = {
     val runtime = new zio.DefaultRuntime {}
-    val io = putStrLn("Hello World!")
+    val io      = putStrLn("Hello World!")
 
     runtime.unsafeRun(io)
   }
