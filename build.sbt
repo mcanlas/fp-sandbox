@@ -2,7 +2,7 @@ lazy val root = Project("fp-sandbox", file("."))
   .aggregate(cats, mouse, catsEffect, fs2, zio, refined, circe)
 
 lazy val cats = project
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.2.0-RC2")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.2.0-RC4")
   .settings(initialCommands in console := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
