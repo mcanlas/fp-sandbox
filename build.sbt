@@ -24,10 +24,13 @@ lazy val refined = project
   .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.12")
 
 lazy val circe = project
-  .settings(libraryDependencies ++= List(
-    "io.circe" %% "circe-core"    % "0.13.0",
-    "io.circe" %% "circe-generic" % "0.13.0",
-    "io.circe" %% "circe-parser"  % "0.13.0"))
+  .settings(
+    libraryDependencies ++= List(
+      "io.circe" %% "circe-core"    % "0.13.0",
+      "io.circe" %% "circe-generic" % "0.13.0",
+      "io.circe" %% "circe-parser"  % "0.13.0"
+    )
+  )
 
 scalafmtOnCompile := true
 
