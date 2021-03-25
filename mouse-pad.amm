@@ -1,5 +1,0 @@
-#!/usr/bin/env amm
-
-import $ivy.`org.typelevel::mouse:0.20`, cats._, cats.data._, cats.implicits._, mouse.all._
-
-(Left("") : Either[String, Int]) >>= (n => Left("asdf"))
