@@ -27,7 +27,7 @@ object ProjectPlugin extends AutoPlugin {
         p.settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.6.1")
 
       def withEffectMonad: Project =
-        p.settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "3.2.9")
+        p.settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "3.3.11")
     }
   }
 }
