@@ -6,7 +6,7 @@ lazy val cats = project
   .settings(console / initialCommands := "import cats._, cats.data._, cats.implicits._")
 
 lazy val catsEffect = project
-  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "3.3.11")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "3.3.12")
   .settings(console / initialCommands := "import cats._, cats.data._, cats.implicits._, cats.effect._")
 
 lazy val fs2 = project
