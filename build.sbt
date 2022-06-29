@@ -3,15 +3,15 @@ lazy val root = Project("fp-sandbox", file("."))
 
 lazy val cats = project
   .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.6.1")
-  .settings(console / initialCommands := "import cats._, cats.data._, cats.implicits._")
+  .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
 lazy val catsEffect = project
   .settings(libraryDependencies += "org.typelevel" %% "cats-effect" % "3.3.13")
-  .settings(console / initialCommands := "import cats._, cats.data._, cats.implicits._, cats.effect._")
+  .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._, cats.effect._")
 
 lazy val fs2 = project
   .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "2.0.0")
-  .settings(console / initialCommands := "import cats._, cats.data._, cats.implicits._")
+  .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
 lazy val zio = project
   .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.12")
