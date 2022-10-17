@@ -28,6 +28,4 @@ lazy val circe = project
     )
   )
 
-scalafmtOnCompile := true
-
 lazy val commonSettings = Seq(scalaVersion := "2.13.10")
