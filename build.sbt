@@ -10,14 +10,14 @@ lazy val catsEffect = project
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._, cats.effect._")
 
 lazy val fs2 = project
-  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "2.0.0")
+  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "3.3.0")
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
 lazy val zio = project
   .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.12")
 
 lazy val refined = project
-  .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.9.12")
+  .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.10.1")
 
 lazy val circe = project
   .settings(
