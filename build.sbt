@@ -28,4 +28,7 @@ lazy val circe = project
     )
   )
 
+lazy val chimney = project
+  .settings(libraryDependencies += "io.scalaland" %% "chimney" % "0.7.4")
+
 lazy val commonSettings = Seq(scalaVersion := "2.13.10")
