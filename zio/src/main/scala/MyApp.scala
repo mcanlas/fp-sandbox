@@ -1,5 +1,5 @@
-import zio._
-import zio.console._
+import zio.*
+import zio.console.*
 
 object MyApp extends App {
   def run(args: List[String]) =
