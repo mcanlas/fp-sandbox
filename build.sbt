@@ -10,7 +10,7 @@ lazy val catsEffect = project
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._, cats.effect._")
 
 lazy val fs2 = project
-  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "3.10.0")
+  .settings(libraryDependencies += "co.fs2" %% "fs2-core" % "3.10.2")
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
 lazy val zio = project
