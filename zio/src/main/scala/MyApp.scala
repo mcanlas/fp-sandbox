@@ -9,5 +9,5 @@ object MyApp extends App:
     for
       _ <- putStrLn("Hello! What is your name?")
       n <- getStrLn
-      _ <- putStrLn(s"Hello, ${n}, good to meet you!")
+      _ <- putStrLn(s"Hello, $n, good to meet you!")
     yield ()
