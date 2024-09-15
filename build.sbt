@@ -1,5 +1,5 @@
 lazy val root = Project("fp-sandbox", file("."))
-  .aggregate(cats, catsEffect, fs2, zio, refined, circe)
+  .aggregate(cats, catsEffect, fs2, zio, refined, circe, chimney)
 
 lazy val cats = project
   .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.12.0")
