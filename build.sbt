@@ -29,4 +29,4 @@ lazy val circe = project
   )
 
 lazy val chimney = project
-  .settings(libraryDependencies += "io.scalaland" %% "chimney" % "0.7.4")
+  .settings(libraryDependencies += "io.scalaland" %% "chimney" % "1.4.0")
