@@ -1,5 +1,5 @@
 import zio.*
-import zio.console.*
+import zio.Console.*
 
 object MyApp extends App:
   def run(args: List[String]) =
@@ -7,7 +7,7 @@ object MyApp extends App:
 
   val myAppLogic =
     for
-      _ <- putStrLn("Hello! What is your name?")
-      n <- getStrLn
-      _ <- putStrLn(s"Hello, $n, good to meet you!")
+      _ <- printLine("Hello! What is your name?")
+      n <- readLine
+      _ <- printLine(s"Hello, $n, good to meet you!")
     yield ()

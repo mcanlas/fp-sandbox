@@ -14,7 +14,7 @@ lazy val fs2 = project
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
 lazy val zio = project
-  .settings(libraryDependencies += "dev.zio" %% "zio" % "1.0.12")
+  .settings(libraryDependencies += "dev.zio" %% "zio" % "2.1.9")
 
 lazy val refined = project
   .settings(libraryDependencies += "eu.timepit" %% "refined" % "0.11.2")
