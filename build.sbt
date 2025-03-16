@@ -23,9 +23,9 @@ lazy val refined = project
 lazy val circe = project
   .settings(
     libraryDependencies ++= List(
-      "io.circe" %% "circe-core"    % "0.14.10",
-      "io.circe" %% "circe-generic" % "0.14.10",
-      "io.circe" %% "circe-parser"  % "0.14.10"
+      "io.circe" %% "circe-core"    % "0.14.11",
+      "io.circe" %% "circe-generic" % "0.14.11",
+      "io.circe" %% "circe-parser"  % "0.14.11"
     )
   )
 
