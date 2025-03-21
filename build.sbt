@@ -2,7 +2,7 @@ lazy val root = Project("fp-sandbox", file("."))
   .aggregate(cats, catsEffect, fs2, zio, refined, circe, chimney)
 
 lazy val cats = project
-  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.12.0")
+  .settings(libraryDependencies += "org.typelevel" %% "cats-core" % "2.13.0")
   .settings(libraryDependencies += "org.scalameta" %% "scalameta" % "4.12.7" cross CrossVersion.for3Use2_13)
   .settings(console / initialCommands := "import cats._, cats.data._, cats.syntax.all._")
 
