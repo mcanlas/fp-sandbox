@@ -1,8 +1,8 @@
 import zio.*
 import zio.Console.*
 
-object MyApp extends App:
-  def run(args: List[String]) =
+object MyApp extends ZIOAppDefault:
+  def run: ZIO[Any, Any, Any] =
     myAppLogic.either.map(_.fold(_ => ExitCode.success, _ => ExitCode.failure))
 
   val myAppLogic =
